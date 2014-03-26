@@ -5,7 +5,7 @@ module.exports = function(grunt) {
             project: {
                 options: {
                     paths: ['source/less'],
-                    compress: true
+                    yuicompress: true
                 },
                 src: ['source/less/manifest.less'],
                 dest: 'deploy/css/style.css'
@@ -41,6 +41,16 @@ module.exports = function(grunt) {
                 dest: 'deploy/js/main.js'
             }
         },
+        cssmin: {
+            options: {
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+            },
+            css: {
+                files: {
+                    'deploy/css/style.min.css': ['deploy/css/style.css']
+                }
+            }
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -54,7 +64,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: ['source/less/**/*.less'],
-                tasks: ['less'],
+                tasks: ['less', 'cssmin'],
                 options: {
                     livereload: true
                 },
@@ -83,6 +93,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['less', 'jade', 'jshint:beforeconcat', 'concat', 'uglify', 'jshint:afterconcat', 'watch']);
+    grunt.registerTask('default', ['less', 'cssmin', 'jade', 'jshint:beforeconcat', 'concat', 'uglify', 'jshint:afterconcat', 'watch']);
 }
