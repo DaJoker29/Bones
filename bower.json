@@ -1,0 +1,18 @@
+{
+  "name": "bones",
+  "version": "0.0.1",
+  "homepage": "https://github.com/DaJoker29/Bones",
+  "authors": [
+    "Dewitt Buckingham <dj729@comcast.net>"
+  ],
+  "description": "Bare-bones Project Skeleton",
+  "license": "GPLv2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
