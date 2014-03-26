@@ -1,7 +1,7 @@
 Bones
 =====
 
-Barebones Skeleton of a basic web design or dev project using all of my favorite tools (Bootstrap, Less, jQuery, Grunt, Jade, Bower and others)
+Barebones Skeleton of a basic web design or dev project using all of my favorite tools ([Bootstrap](https://getbootstrap.com), [Less](http://lesscss.org/), [jQuery](http://jquery.com), [Grunt](http://gruntjs.com), [Jade](http://jade-lang.com/), [Bower](http://bower.io/) and others)
 
 
 Usage
