@@ -1,6 +1,6 @@
 {
   "name": "bones",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Bare-bones Project Skeleton",
   "main": "index.js",
   "scripts": {
