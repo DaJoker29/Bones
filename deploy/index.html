@@ -15,8 +15,44 @@
     -->
   </head>
 </html>
-<h1>Bones Project Skeleton </h1>
-<!--Scripts-->
-<script src="js/main.min.js"></script>
-<!--Live Reload (Remove Before Deployment)-->
-<script src="//localhost:35729/livereload.js"></script>
+<body>
+  <header id="home-anchor">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Bones</a>
+        </div>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home-anchor">Home</a></li>
+            <li><a href="#notes-anchor">Notes</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"> Style Guide <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Section</a></li>
+                <li><a href="#">Section</a></li>
+                <li><a href="#">Section</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Section</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Section</a></li>
+                <li><a href="#">Section</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Search" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="content"></div>
+  <footer></footer>
+  <!--Scripts-->
+  <script src="js/main.min.js"></script>
+  <!--Live Reload (Remove Before Deployment)-->
+  <script src="//localhost:35729/livereload.js"></script>
+</body>
