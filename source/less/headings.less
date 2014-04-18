@@ -1,0 +1,37 @@
+.page-header {
+    position: relative;
+    background: @purple;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    border-bottom: none;
+}
+
+.page-header:before, .page-header:after {
+    content: "";
+    position: absolute;
+    background: @purple;
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+}
+
+.page-header:before {
+    right: 100%;
+}
+
+.page-header:after {
+    left: 100%;
+}
+
+#style,
+#style:before,
+#style:after {
+
+    background: @red;
+}
+
+#notes,
+#notes:before,
+#notes:after {
+
+    background: @green;
+}

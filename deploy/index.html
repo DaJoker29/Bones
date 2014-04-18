@@ -15,8 +15,8 @@
     -->
   </head>
 </html>
-<body>
-  <header id="home-anchor">
+<body><a id="home-anchor" class="anchor"></a>
+  <header id="home">
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -28,13 +28,11 @@
             <li><a href="#notes-anchor">Notes</a></li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"> Style Guide <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Section</a></li>
-                <li><a href="#">Section</a></li>
-                <li><a href="#">Section</a></li>
+                <li><a href="#headings-anchor">Headings</a></li>
+                <li><a href="#containers-anchor">Containers</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Section</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Section</a></li>
                 <li><a href="#">Section</a></li>
               </ul>
             </li>
@@ -55,13 +53,36 @@
         <h1>Welcome to Bones <small></small></h1>
         <p>This is a super badass project framework that I made that uses Bootstrap, jQuery, Node and a bunch of other cool packages that I like.</p>
         <div class="btn-group"><a role="button" href="https://github.com/dajoker29/bones" class="btn btn-primary btn-lg">Source</a><a role="button" href="http://zerodaedalus.com" class="btn btn-success btn-lg">My Website</a></div>
-      </div>
-      <div id="notes-anchor" class="page-header">
+      </div><a id="notes-anchor" class="anchor"></a>
+      <div id="notes" class="page-header">
         <h1>Notes <small>Usage, References, Documentation, Etc.</small></h1>
       </div>
-      <div id="style-anchor" class="page-header">
+      <div id="style" class="page-header">
         <h1>Style Guide <small>Sexiness</small></h1>
       </div>
+      <!--Headings--><a id="headings-anchor" class="anchor"></a>
+      <h1>Headings</h1>
+      <hr>
+      <div class="page-header">
+        <h1>Page Header <small>Small</small></h1>
+      </div>
+      <h1>H1 Heading</h1>
+      <h2>H2 Heading</h2>
+      <h3>H3 Heading</h3>
+      <h4>H4 Heading</h4>
+      <h5>H5 Heading</h5>
+      <h6>H6 Heading</h6>
+      <!--Containers--><a id="containers-anchor" class="anchor"></a>
+      <h1>Containers</h1>
+      <hr>
+      <h2>Article</h2>
+      <article>
+        All kinds of words and stuff about all kinds of things that make sense and apply to various other things and stuff.
+        
+      </article>
+      <h2>Blockquote</h2>
+      <p>A quote by Malcolm X</p>
+      <blockquote>I believe in the brotherhood of man, all men, but I don't believe in brotherhood with anybody who doesn't want brotherhood with me. I believe in treating people right, but I'm not going to waste my time trying to treat somebody right who doesn't know how to return the treatment.</blockquote>
     </div>
   </div>
   <footer></footer>
